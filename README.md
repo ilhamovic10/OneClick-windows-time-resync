@@ -1,5 +1,13 @@
 # Windows 11 Time & Timezone Resync
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Platform](https://img.shields.io/badge/platform-windows-blue)](https://www.microsoft.com/windows)
+[![Language](https://img.shields.io/badge/language-Batch-orange)](https://en.wikipedia.org/wiki/Batch_file)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Elham1x0/OneClick-windows-time-resync)](https://github.com/Elham1x0/OneClick-windows-time-resync/releases/latest)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Elham1x0/OneClick-windows-time-resync)](https://github.com/Elham1x0/OneClick-windows-time-resync/commits/main)
+
+---
+
 A lightweight batch utility designed to fix desynchronized clocks and automatically adjust local time zones on Windows 10 and 11 devices (especially after travel or waking from sleep).
 
 ## Features
@@ -25,6 +33,6 @@ A lightweight batch utility designed to fix desynchronized clocks and automatica
 
 ### Option 2: Command Line (Admin)
 ```cmd
-git clone https://github.com/ilhamovic10/OneClick-windows-time-resync.git
+git clone https://github.com/Elham1x0/OneClick-windows-time-resync.git
 cd windows-time-resync
 sync-time.bat

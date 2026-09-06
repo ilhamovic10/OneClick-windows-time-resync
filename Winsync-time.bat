@@ -1,9 +1,15 @@
 @echo off
 setlocal enabledelayedexpansion
 
-:: Windows 11 One-Click Time & Timezone Self-Healing Resync Utility
-:: Auto-elevates to Admin, syncs time, and automatically repairs corrupted time services on error.
+:: ======================================================
+:: Project:     Windows 11 Time & Timezone Auto-Fix
+:: Author:      Elham1x0
+:: Copyright:   (c) 2026 Elham1x0. All rights reserved.
+:: License:     MIT License
+:: Repository:  https://github.com/Elham1x0/OneClick-windows-time-resync
+:: ======================================================
 
+:: Check for Administrative privileges
 net session >nul 2>&1
 if %errorlevel% neq 0 (
     echo [INFO] Administrator privileges required. Elevating...
@@ -11,10 +17,11 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
-title One-Click Windows Time Fixer
+title One-Click Windows Time Fixer - by Elham1x0
 
 echo ======================================================
 echo          Windows 11 Time Auto-Fix & Resync
+echo                Developed by: Elham1x0
 echo ======================================================
 echo.
 
