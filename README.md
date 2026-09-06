@@ -1,4 +1,4 @@
-# Windows 11 Time & Timezone Resync
+# One-Click Windows Time & Timezone Resync
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/platform-windows-blue)](https://www.microsoft.com/windows)
