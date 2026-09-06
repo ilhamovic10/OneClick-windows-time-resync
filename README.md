@@ -3,12 +3,24 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/platform-windows-blue)](https://www.microsoft.com/windows)
 [![Language](https://img.shields.io/badge/language-Batch-orange)](https://en.wikipedia.org/wiki/Batch_file)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Elham1x0/OneClick-windows-time-resync)](https://github.com/Elham1x0/OneClick-windows-time-resync/releases/latest)
+[![GitHub release](https://img.shields.io/github/v/release/Elham1x0/OneClick-windows-time-resync?color=green)](https://github.com/Elham1x0/OneClick-windows-time-resync/releases/latest)
 [![GitHub last commit](https://img.shields.io/github/last-commit/Elham1x0/OneClick-windows-time-resync)](https://github.com/Elham1x0/OneClick-windows-time-resync/commits/main)
 
 ---
 
-A lightweight batch utility designed to fix desynchronized clocks and automatically adjust local time zones on Windows 10 and 11 devices (especially after travel or waking from sleep).
+> **One-click self-healing clock and timezone fixer for Windows 10 & 11.**  
+> Built for laptops plagued by dying CMOS batteries, sleep/wake desyncs, and unresponsive Windows Time services.
+
+---
+
+### 🛑 The Problem
+
+When your laptop battery drops to 0% or your internal CMOS coin-cell dies, Windows forgets what year it is. You boot up to find:
+* Every HTTPS page throwing `NET::ERR_CERT_DATE_INVALID`.
+* Messaging and authentication apps crashing or failing to handshake.
+* The built-in Windows Settings "Sync now" button stalling with generic error messages.
+
+**`Winsync-time.bat`** fixes this in a single click: it auto-elevates to Administrator, sets your time zone via Windows location services, and forces an immediate network resynchronization. If the standard sync fails, it triggers an automatic repair sequence to rebuild the time service and restore your clock.
 
 ## Features
 
