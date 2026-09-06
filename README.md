@@ -15,18 +15,18 @@
 
 ### 🔋 The Story Behind It
 
-This utility was born out of pure frustration with a laptop battery issue that wiped system time on every cold reboot. Manual resyncing in Windows 11 is notoriously finicky—half the time the GUI "Sync" button silently fails, and the other half requires restarting background services manually.
+This utility was born out of pure frustration with a laptop battery issue that wiped the system time on every reboot. Instead of dealing with failed "Sync now" buttons and restarting Windows services manually, this script automates the entire recovery in one click.
 
 This script automates the entire triage: it enables location auto-updates, tests standard NTP peers, and if the sync fails, automatically rebuilds the Windows Time catalog and injects fallback NTP servers until the clock is accurate.
 
 ---
 
-### 🛑 The Problem
+### 🛑 Why You Need This 🛑
 
-When your laptop battery drops to 0% or your internal CMOS coin-cell dies, Windows forgets what year it is. You boot up to find:
-* Every HTTPS page throwing `NET::ERR_CERT_DATE_INVALID`.
-* Messaging and authentication apps crashing or failing to handshake.
-* The built-in Windows Settings "Sync now" button stalling with generic error messages.
+When a laptop battery drains to 0% (or the small internal battery is worn out esp on old laptop/PC), Windows will forgets the correct time. When this happens:
+* **Websites won't load:** Your browser warns that "Your connection is not private" because the date is wrong.
+* **Apps won't log in:** Apps like Discord, WhatsApp, Steam, or email refuse to connect.
+* **Windows won't fix itself:** The "Sync now" button in Windows Settings often gets stuck spinning or shows an error.
 
 **`Winsync-time.bat`** fixes this in a single click: it auto-elevates to Administrator, sets your time zone via Windows location services, and forces an immediate network resynchronization. If the standard sync fails, it triggers an automatic repair sequence to rebuild the time service and restore your clock.
 
